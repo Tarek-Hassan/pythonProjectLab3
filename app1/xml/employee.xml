@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="employee.css"?>
+<employeeData>
+<!-- phone type(home-work-mobile) -->
+  <employee name="tarek">
+    <phones>
+        <phone type="home">21536523232</phone>
+        <phone type="work">21536523232</phone>
+        <phone type="mobile">21536523232</phone>
+    </phones>
+    <addresse>alex</addresse>
+    <email>admin@admin.com</email>
+  </employee>
+   <employee name="tarek">
+    <phones>
+        <phone type="home">21536523232</phone>
+        <phone type="work">21536523232</phone>
+        <phone type="mobile">21536523232</phone>
+    </phones>
+    <addresse>alex</addresse>
+    <email>admin@admin.com</email>
+  </employee>
+   <employee name="tarek">
+    <phones>
+        <phone type="home">21536523232</phone>
+        <phone type="work">21536523232</phone>
+        <phone type="mobile">21536523232</phone>
+    </phones>
+    <addresse>alex</addresse>
+    <email>admin@admin.com</email>
+  </employee>
+</employeeData> 

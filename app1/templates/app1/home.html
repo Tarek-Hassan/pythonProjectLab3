@@ -1,0 +1,34 @@
+
+{% extends 'app1/base.html'%}
+
+{% load static %}
+
+{% block image%}
+<img src="{%static 'img/a.jpg'%}" alt="image" width="400" height="500"/>
+
+{%endblock%}
+
+{% block main%}
+<button class="btn-danger"><a href="addst"> AddNewStudent</a></button>
+
+<table border=1>
+	<th>ID</th>
+	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Age</th>
+	<th>Track</th>
+	<th>Action</th>
+	{% for st in all  %}
+	<tr>
+		<td>{{st.id}}</td>
+		<td>{{st.fname}}</td>
+		<td>{{st.lname}}</td>
+		<td>{{st.age}}</td>
+		<td>{{st.studentTrack}}</td>
+		<td><a href="showst/{{st.id}}">describe</a></td>
+		<td><a href="editst/{{st.id}}">edit</a></td>
+		<td><a href="delst/{{st.id}}">delete</a></td>
+	</tr>
+	{% endfor%}
+</table>
+{%endblock%}
