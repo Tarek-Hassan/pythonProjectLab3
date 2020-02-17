@@ -1,6 +1,6 @@
 from django.urls import path
 from app1 import views
-from app1 import xml
+
 urlpatterns = [
     path('index', views.index),
     path('home', views.home),
@@ -9,7 +9,7 @@ urlpatterns = [
     path('addst', views.addStudent),
     path('editst/<id>', views.editStudent),
     path('delst/<id>', views.delStudent),
-    # path('xml', xml.xmlFunction),
+
 ]
 
 
