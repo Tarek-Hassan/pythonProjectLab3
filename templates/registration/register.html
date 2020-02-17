@@ -1,0 +1,11 @@
+{% extends 'dashbord/index.html'%}
+{% block header%}
+<h1>regester</h1>
+{%endblock%}
+{% block content%}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button> Register</button>
+    </form>
+{% endblock %}
